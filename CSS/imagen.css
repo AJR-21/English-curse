@@ -1,0 +1,49 @@
+:root {
+    --color1: #75FF33;
+    --color2: #33FFBD;
+   
+}
+body {
+   background-image: radial-gradient(var(--color1), var(--color2)); 
+}
+.cuerpo {
+    display: inline-block;
+    margin-top: 0;
+    padding: 0;   
+}
+.cuerpo h2{
+    text-align: center;
+    font-size: 50px;
+    color: #0675cf;
+    margin-bottom: 0;
+}
+.cuerpo p {
+    text-align: center;
+    margin-top: 0px;
+    color:  white;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    margin: 100px; 
+    margin-top: 60px;
+    border-radius: 20px;
+    box-shadow: -10px 10px 10px #364543;
+    transition: transform 2s;
+}
+.margen1 {
+    margin-left: 25%;
+}
+img:hover {
+    transform: rotateY(40deg);
+}
+
+@media  only screen and(max-width: 600px) {
+  
+    .cuerpo {
+        width: 100%;
+    }
+    
+   
+}

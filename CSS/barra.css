@@ -1,0 +1,43 @@
+body {
+    background-image: linear-gradient(to bottom, var(--color1), var(--color2)); 
+ }
+.barra {
+    float: left;
+    width: 200px;
+    height: 500px;
+    overflow-y: scroll;
+    background-color: var(--bacgroundBar);
+    position:static;
+    margin: 0;
+    padding: 0;
+    
+}
+.hoja {
+    padding: 0;
+    position: absolute;
+    overflow-y: scroll;  
+    
+}
+.barra h3 {
+    padding-left: 10px;
+    color: var(--titleBar) ;
+}
+.barra ul {
+    padding: 0;
+}
+.barra ul li {
+    list-style-type: none;
+    
+}
+.barra li a{
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    color: var(--subtitleBar);
+    padding: 5px 10px;
+}
+.barra li a:hover{
+    background-color: var(--selectBar);
+    color:white;
+}
+

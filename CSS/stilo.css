@@ -1,0 +1,99 @@
+:root {
+    --color1: #75FF33;
+    --color2: #33FFBD;
+    --title: #124960;
+    --subtitle: #146f8a;
+    --navegacion: #122743;
+    --footer: #124960;
+    --bacgroundBar: #caf0f5;
+    --titleBar: #122743;
+    --subtitleBar: #124960;
+    --selectBar: #65b000;
+    --bodycolor: #add9ff;
+}
+body {
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.icon {
+    float: left;
+    margin: 0 10px;
+    padding: 0;
+}
+.icon img {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+}
+header {
+    margin: 0px;
+    padding: 20px;
+    background-image: linear-gradient(to right, var(--color1) 30%, var(--color2));
+}
+header h1 {
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: var(--title);
+}
+header p {
+    margin-left: 100px;
+    margin-top: 0px;
+    color: var(--subtitle);
+    font-weight: bold;
+}
+.navegacion {
+   height: 46px;
+}
+.navegacion ul {
+    list-style-type: none;
+    margin-top: 0px;
+    background-color: var(--navegacion);
+    padding: 0;
+    overflow: hidden;
+    clear: right;
+}
+.navegacion li {
+    float: left;
+    
+}
+.navegacion li a {
+    text-decoration: none;
+    padding: 14px 20px; 
+    display: block;
+    text-align: center;   
+    color: white;
+    width: 100px;
+}
+.navegacion li a:hover {
+    background-color: rgb(64, 253, 7);
+    color: black;
+}
+.navegacion::after{
+    content: "";
+    clear: both;
+}
+@media only screen and (max-width: 600px) {
+    .navegacion {
+        position: relative;
+        width: 100%;
+    }
+
+    .navegacion li {
+        float: none;
+    }
+    .navegacion li a{
+        text-align: center;
+        width: 100%;
+    }
+    
+}
+footer {
+    clear: both;
+    background-color: var(--footer);
+    padding: 30px;
+}
+footer p {
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexander Jimenez">
+    <meta name="keywords" content="Exercices verb to be">
+    <title>Exercices verb to be</title>
+    <link rel="stylesheet" href="../teoryToBe.css">
+
+</head>
+<body>
+    <h1>Exercices verb to be</h1>
+    <h2>A. Affirmative</h2>
+       <div class="preguntas">
+           <form name="f1">
+              <!--pregunta 1--> 
+               <label for="q0"><b>1.</b> The weather ____ nice today.</label><br>
+               <input type="radio" name="q1" value="false">
+               <label for="am0" class="error">Am</label><br>
+               <input type="radio" name="q1" value="true">
+               <label for="answer" class="answer">Is</label><br>
+               <input type="radio" name="q1" value="false">
+               <label for="answer" class="error">Are</label><br><br>
+
+               <!--pregunta 2--> 
+               <label for="q2"><b>2.</b> I ____ not tired.</label><br>
+               <input type="radio" name="q2" value="true">
+               <label for="answer" class="answer">Am</label><br>
+               <input type="radio" name="q2" value="false">
+               <label for="answer" class="error">Is</label><br>
+               <input type="radio" name="q2" value="false">
+               <label for="answer" class="error">Are</label><br><br>
+
+               <!--pregunta 3--> 
+               <label for="q3"><b>3.</b> She ____ beautiful.</label><br>
+               <input type="radio" name="q3" value="false">
+               <label for="answer" class="error">Am</label><br>
+               <input type="radio" name="q3" value="true">
+               <label for="answer" class="answer">Is</label><br>
+               <input type="radio" name="q3" value="false">
+               <label for="answer" class="error">Are</label><br><br>
+
+               <!--pregunta 4--> 
+               <label for="q4"><b>4.</b> My brother and I ____ good chess players.</label><br>
+               <input type="radio" name="q4" value="false">
+               <label for="answer" class="error">Am</label><br>
+               <input type="radio" name="q4" value="false">
+               <label for="answer" class="error">Is</label><br>
+               <input type="radio" name="q4" value="true">
+               <label for="answer" class="answer">Are</label><br><br>
+
+               <!--pregunta 5--> 
+               <label for="q5"><b>5.</b> Maria ____ at home.</label><br>
+               <input type="radio" name="q5" value="false">
+               <label for="answer" class="error">Am</label><br>
+               <input type="radio" name="q5" value="true">
+               <label for="answer" class="answer">Is</label><br>
+               <input type="radio" name="q5" value="false">
+               <label for="answer" class="error">Are</label><br><br>
+
+               <!--pregunta 6--> 
+               <label for="q6"><b>6.</b> You ____ very smart.</label><br>
+               <input type="radio" name="q6" value="false">
+               <label for="answer" class="error">Am</label><br>
+               <input type="radio" name="q6" value="false">
+               <label for="answer" class="error">Is</label><br>
+               <input type="radio" name="q6" value="true">
+               <label for="answer" class="answer">Are</label><br><br>
+
+               <!--pregunta 7--> 
+               <label for="q7"><b>7.</b> This bag ____ heavy.</label><br>
+               <input type="radio" name="q7" value="false">
+               <label for="answer" class="error">Am</label><br>
+               <input type="radio" name="q7" value="true">
+               <label for="answer" class="answer">Is</label><br>
+               <input type="radio" name="q7" value="false">
+               <label for="answer" class="error">Are</label><br><br>
+
+               <!--pregunta 8--> 
+               <label for="q8"><b>8.</b> These bags ____ heavy.</label><br>
+               <input type="radio" name="q8" value="false">
+               <label for="answer" class="error">Am</label><br>
+               <input type="radio" name="q8" value="false">
+               <label for="answer" class="error">Is</label><br>
+               <input type="radio" name="q8" value="true">
+               <label for="answer" class="answer">Are</label><br><br>
+
+               <!--pregunta 9--> 
+               <label for="q9"><b>9.</b>They ____ students.</label><br>
+               <input type="radio" name="q9" value="false">
+               <label for="answer" class="error">Am</label><br>
+               <input type="radio" name="q9" value="false">
+               <label for="answer" class="error">Is</label><br>
+               <input type="radio" name="q9" value="true">
+               <label for="answer" class="answer">Are</label><br><br>
+
+               <!--pregunta 10--> 
+               <label for="q10"><b>10.</b> Alex ____ a good engineer.</label><br>
+               <input type="radio" name="q10" value="false">
+               <label for="am9" class="error">Am</label><br>
+               <input type="radio" name="q10" value="true">
+               <label for="is9" class="answer">Is</label><br>
+               <input type="radio" name="q10" value="false">
+               <label for="answer" class="error">Are</label><br><br>
+
+               <!--botoom de verificar las respuestas-->
+               <input type="button" onclick="checkAffirmativeTest()" value="Check" class="button">
+               <input type="button" onclick="showAnswer()" value="Show Answers" class="button">
+               <input type="button" onclick="tryAgain()" value="Try again" class="button">
+               
+
+           </form>
+       </div>
+    <h2>B. Negative</h2>
+       <div class="negative">
+            <table>
+                <tr>
+                    <td>
+                        <b>1.</b> You 
+                        <span class="sentences">
+                            <select name="" id="nq0">
+                               <option value="0"></option>
+                               <option value="1">am not</option>
+                               <option value="2">isn't</option>
+                               <option value="3">aren't</option>
+                            </select>
+                        </span>
+                         ugly.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>2.</b> My brother 
+                        <span class="sentences">
+                            <select name="" id="nq1">
+                               <option value="0"></option>
+                               <option value="1">am not</option>
+                               <option value="2">isn't</option>
+                               <option value="3">aren't</option>
+                            </select>
+                        </span>
+                         a teacher.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>3.</b> The supermarket 
+                        <span class="sentences">
+                            <select name="" id="nq2">
+                               <option value="0"></option>
+                               <option value="1">am not</option>
+                               <option value="2">isn't</option>
+                               <option value="3">aren't</option>
+                            </select>
+                        </span>
+                         open today.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>4.</b> Mayra 
+                        <span class="sentences">
+                            <select name="" id="nq3">
+                               <option value="0"></option>
+                               <option value="1">am not</option>
+                               <option value="2">isn't</option>
+                               <option value="3">aren't</option>
+                            </select>
+                        </span>
+                         sick.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>5.</b> Kevin and I 
+                        <span class="sentences">
+                            <select name="" id="nq4">
+                               <option value="0"></option>
+                               <option value="1">am not</option>
+                               <option value="2">isn't</option>
+                               <option value="3">aren't</option>
+                            </select>
+                        </span>
+                         brother.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>6.</b> The shops 
+                        <span class="sentences">
+                            <select name="" id="nq5">
+                               <option value="0"></option>
+                               <option value="1">am not</option>
+                               <option value="2">isn't</option>
+                               <option value="3">aren't</option>
+                            </select>
+                        </span>
+                         open on Sundays.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>7.</b> I 
+                        <span class="sentences">
+                            <select name="" id="nq6">
+                               <option value="0"></option>
+                               <option value="1">am not</option>
+                               <option value="2">isn't</option>
+                               <option value="3">aren't</option>
+                            </select>
+                        </span>
+                         a doctor.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>8.</b> They
+                        <span class="sentences">
+                            <select name="" id="nq7">
+                               <option value="0"></option>
+                               <option value="1">am not</option>
+                               <option value="2">isn't</option>
+                               <option value="3">aren't</option>
+                            </select>
+                        </span>
+                         students.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>9.</b> Messi
+                        <span class="sentences">
+                            <select name="" id="nq8">
+                               <option value="0"></option>
+                               <option value="1">am not</option>
+                               <option value="2">isn't</option>
+                               <option value="3">aren't</option>
+                            </select>
+                        </span>
+                         a player tennis.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>10.</b> The all news 
+                        <span class="sentences">
+                            <select name="" id="nq9">
+                               <option value="0"></option>
+                               <option value="1">am not</option>
+                               <option value="2">isn't</option>
+                               <option value="3">aren't</option>
+                            </select>
+                        </span>
+                         true.
+                    </td>
+                </tr>
+            </table> <br>
+            <input type="button" onclick="checkNegativeTest()" value="Check" class="button">
+            <input type="button" onclick="showAnswerNegative()" value="Show answer" class="button">
+            
+        </div>
+    <h2>C. Interrogative</h2>
+    <div class="question">
+        <table>
+            <tr>
+                <td>
+                    <b>1. </b>  
+                    <span class="qSentences">
+                        <select name="" id="iq0">
+                           <option value="0"></option>
+                           <option value="1">Am</option>
+                           <option value="2">Is</option>
+                           <option value="3">Are</option>
+                        </select>
+                    </span>
+                     you married?
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>2. </b>
+                    <span class="qSentences">
+                        <select name="" id="iq1">
+                           <option value="0"></option>
+                           <option value="1">Am</option>
+                           <option value="2">Is</option>
+                           <option value="3">Are</option>
+                        </select>
+                    </span>
+                     your mother at home?
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>3.</b>  
+                    <span class="qSentences">
+                        <select name="" id="iq2">
+                           <option value="0"></option>
+                           <option value="1">Am</option>
+                           <option value="2">Is</option>
+                           <option value="3">Are</option>
+                        </select>
+                    </span>
+                     your parents well?
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>4. </b>
+                    <span class="qSentences">
+                        <select name="" id="iq3">
+                           <option value="0"></option>
+                           <option value="1">Am</option>
+                           <option value="2">Is</option>
+                           <option value="3">Are</option>
+                        </select>
+                    </span>
+                     near here the university?
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>5. </b>  
+                    <span class="qSentences">
+                        <select name="" id="iq4">
+                           <option value="0"></option>
+                           <option value="1">Am</option>
+                           <option value="2">Is</option>
+                           <option value="3">Are</option>
+                        </select>
+                    </span>
+                     he your brother?
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>6. </b>  
+                    <span class="qSentences">
+                        <select name="" id="iq5">
+                           <option value="0"></option>
+                           <option value="1">Am</option>
+                           <option value="2">Is</option>
+                           <option value="3">Are</option>
+                        </select>
+                    </span>
+                     you a engineer?
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>7. </b> 
+                    <span class="qSentences">
+                        <select name="" id="iq6">
+                           <option value="0"></option>
+                           <option value="1">Am</option>
+                           <option value="2">Is</option>
+                           <option value="3">Are</option>
+                        </select>
+                    </span>
+                     these your keys?
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>8. </b> 
+                    <span class="qSentences">
+                        <select name="" id="iq7">
+                           <option value="0"></option>
+                           <option value="1">Am</option>
+                           <option value="2">Is</option>
+                           <option value="3">Are</option>
+                        </select>
+                    </span>
+                     she a student?
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>9. </b>
+                    <span class="qSentences">
+                        <select name="" id="iq8">
+                           <option value="0"></option>
+                           <option value="1">Am</option>
+                           <option value="2">Is</option>
+                           <option value="3">Are</option>
+                        </select>
+                    </span>
+                     they sister?
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>10. </b>  
+                    <span class="qSentences">
+                        <select name="" id="iq9">
+                           <option value="0"></option>
+                           <option value="1">Am</option>
+                           <option value="2">Is</option>
+                           <option value="3">Are</option>
+                        </select>
+                    </span>
+                     the teacher tired?
+                </td>
+            </tr>
+        </table> <br>
+        <input type="button" onclick="checkQuestion()" value="Check" class="button">
+        <input type="button" onclick="showAnswerQuestion()" value="Show answer" class="button">
+        
+    </div>
+
+    <script src="scripts/tobe.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
+    
+</body>
+</html>

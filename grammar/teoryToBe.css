@@ -1,0 +1,104 @@
+:root {
+    --titulo: #122155;
+    --subtitulo: #145b88;
+    --ejemplos: #b70800;
+    --tablahead: #00fdff;
+    --verb: red;
+    --sombra: #0360f4;
+    --box_shadow: #747873;
+    --bottom: #122743;
+    --hoverbutton: #1aa3b5;
+}
+/*h1 y h2 son diseño de titilo y subtitulo de teoria y ejercicios*/
+h1 {
+    text-align: center;
+    color: var(--titulo);
+    text-shadow: 2px 5px 5px var(--sombra);
+}
+h2 {
+    clear: left;
+    padding-left: 30px;
+    color: var(--subtitulo);
+}
+/*Diseño de las tablas de verb to be teoría*/
+.tabla {
+    float: left;
+    margin: 10px 50px 20px 100px;
+}
+
+.tabla th {
+    color: var(--ejemplos);
+   
+}
+.tabla b {
+    color: var(--verb);
+}
+.tabla, .tabla th, .tabla td{
+    border: 3px solid var(--titulo);
+    border-collapse: collapse;
+}
+.tabla th, .tabla td {
+    width: 150px;
+    text-align: center;
+}
+/*Diseño de los ejemplos de verb to be teoría*/
+.ejemplos {
+    margin-top: 30px;
+}
+.ejemplos b {
+    color: var(--verb);
+}
+/*diseño del bottom que conduce a los ejercicios de verb to be*/
+.bottom_exercice {
+    content: "";
+    clear: both;   
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.bottom_exercice a{
+    margin-left: 50%;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+    width: 150px;
+    height: 20px;
+    background-color: var(--bottom);
+    border-radius: 25px;
+    box-shadow: 0px 10px 10px var(--box_shadow);
+}
+/*botodos verificar, mostrar e intentar de nuevo*/
+.bottom_exercice a:hover, .button:hover {
+    background-color: var(--hoverbutton);
+    color: var(--titulo);
+    cursor: pointer;
+}
+
+/*Diseñp del formulario*/
+.preguntas form{
+    margin-left: 50px;   
+}
+.preguntas b, .negative b, .question b {
+    color: var(--titulo);
+    font-size: 20px;
+}
+.button{
+    width: 100px;
+    height: 30px;
+    background-color: var(--bottom);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    box-shadow: 0px 10px 10px var(--box_shadow);
+}
+/*diseño de los ejercicios de negative sentences*/
+.negative, .question {
+    margin-left: 30px;
+    padding-left: 20px;
+
+}
+.negative td, .question td{
+    padding: 10px 0px;
+}
+
+   
+

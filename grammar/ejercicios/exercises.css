@@ -1,0 +1,96 @@
+:root {
+    --title: #00394f;
+    --subtitulo: #145b88;
+    --text_shadow: #0360f4;
+    --box_shadow: #747873;
+    --button: #122743;
+    --hoverbutton: #75FF33;
+    --fondo: #20dbd9;
+}
+/*diseño para el presente continuo*/
+h1 {
+    text-align: center;
+    color: var(--title);
+    text-shadow: 2px 5px 5px var(--text_shadow);
+}
+.contenedor {
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 5px solid var(--title);
+    border-radius: 20px;
+    background-color: var(--fondo);
+}
+.question {
+    padding: 30px;
+}
+.question table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+.question th {
+    text-align: left;
+    padding: 5px;
+    color: var(--title);
+}
+.question th b{
+    color: var(--title);
+    font-size: 20px;
+}
+.question td{
+    text-align: center;
+    padding: 5px;
+}
+.button {
+    width: 300px;
+    border-radius: 25px;
+    padding: 8px 10px;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(to bottom, var(--title), #006ab2);
+    box-shadow: 0px 10px 15px var(--box_shadow);
+}
+.button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, green, var(--hoverbutton));
+    transform: scale(1.2);
+    transition: 1s;
+}
+.puntuacion {
+    float: left;
+    margin: 20px 230px;
+}
+.puntuacion label {
+    color: var(--title);
+    font-weight: bolder;
+}
+#score, #mistake {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+}
+#score{ 
+    color: var(--title);
+    background-color: var(--hoverbutton);
+}
+#mistake {
+    color: white;
+    background-color: red;
+}
+.mover {
+    clear: left;
+    margin: 20px 250px;
+    width: 50px;
+    height: 30px;
+    color: white;
+    background-color: var(--button);
+    border-radius: 20px;
+}
+.mover:hover {
+    cursor: pointer;
+    color: var(--button);
+    background-color: var(--fondo);
+}
