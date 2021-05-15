@@ -56,20 +56,26 @@ h1 {
     transform: scale(1.2);
     transition: 1s;
 }
+/*diseño de la zona de puntuaciones*/
 .puntuacion {
     float: left;
     margin: 20px 230px;
 }
 .puntuacion label {
+    float: left;
     color: var(--title);
     font-weight: bolder;
+    font-size: 18px;
 }
 #score, #mistake {
+    display: inline-block;
     text-align: center;
+    margin: 0;
     width: 20px;
     height: 20px;
     font-weight: bold;
     font-size: 18px;
+    border: 2px solid var(--button);
     border-radius: 5px;
 }
 #score{ 

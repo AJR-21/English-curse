@@ -8,15 +8,15 @@
     <title>Exercises present continuous</title>
     <link rel="stylesheet" href="exercises.css">
 </head>
-<body>
+<body onload="ocultarEjercicios()">
     <h1>Present Continuous</h1>
-    <div class="contenedor">
+    <div class="contenedor" >
         
         <div class="question">
             <table>
                 <tr><th><b>1.</b> Please be quiet. I _________.</th></tr>
                 <tr><td><input type="button" value="am work" class="button"></td></tr>
-                <tr><td><input type="button" value="am working" class="button"></td></tr>
+                <tr><td><input type="button" value="am working" onclick="checkAnswer()" class="button"></td></tr>
                 <tr><td><input type="button" value="working" class="button"></td></tr>
                 <tr><td><input type="button" value="work" class="button"></td></tr>
             </table>
@@ -26,7 +26,7 @@
                 <tr><th><b>2.</b> Where's your mom? She's in the kitchen. She ___________.</th></tr>
                 <tr><td><input type="button" value="cooking" class="button"></td></tr>
                 <tr><td><input type="button" value="cook" class="button"></td></tr>
-                <tr><td><input type="button" value="is cooking" class="button"></td></tr>
+                <tr><td><input type="button" value="is cooking" onclick="checkAnswer()" class="button"></td></tr>
                 <tr><td><input type="button" value="is cook" class="button"></td></tr>
             </table>
         </div>
@@ -107,15 +107,17 @@
     </div>
     <div class="puntuacion">
         <label for="score">Score: </label>
-        <input type="text" id="score"  name="score" value="0" readonly>
+        <p id="score"></p>
+        
     </div>
     <div class="puntuacion">
         <label for="mistake">Mistakes: </label>
-        <input type="text" id="mistake"  name="mistake" value="0" readonly>
+        <p id="mistake"></p>
     </div>
 
-    <button class="mover"><i class="fas fa-arrow-left"></i></button>
-    <button class="mover"><i class="fas fa-arrow-right"></i></button>
+    <button class="mover" onclick="beforQuestion()"><i class="fas fa-arrow-left"></i></button>
+    <button class="mover" onclick="nextQuestion()"><i class="fas fa-arrow-right"></i></button>
+    <script src="scripts/presentContinuous.js"></script>
     <script src="https://kit.fontawesome.com/a193a37628.js" crossorigin="anonymous"></script>
     
 </body>
