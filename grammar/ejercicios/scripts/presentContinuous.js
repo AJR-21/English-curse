@@ -5,6 +5,7 @@ var clase = document.getElementsByClassName('question');
 var boton = document.getElementsByClassName('button');
 var score = document.getElementById('score');
 var mistake = document.getElementById('mistake');
+var questions = [1, 6, 11, 12, 18, 23, 24, 29, 34, 39];
 
 //función que oculta los ejercicios
 function ocultarEjercicios(){
@@ -14,7 +15,6 @@ function ocultarEjercicios(){
             clase[i].style.display = "none";
         }
     }
-    
 }
 //función que mueve al siguiente ejercicio
 function nextQuestion(){
@@ -23,11 +23,26 @@ function nextQuestion(){
         contador++;
         clase[contador].style.display = 'block';
     } else if (contador === 9){
-
-    }
-    
-    
-
+        if (correct === 10){
+            Swal.fire({
+                icon: 'success',
+                title: 'EXELENT!! ' + correct.toString() + '/10',
+                text: 'You are the best'
+            })
+        } else if(correct > 5){
+            Swal.fire({
+                icon: 'success',
+                title: 'WELL DONE!! ' + correct.toString() + '/10',
+                text: 'Keep improving'
+            })
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'FAIL!! ' + correct.toString() + '/10',
+                text: 'Never give up'
+            })
+        }
+    }  
 }
 //función que hace retornar al ejercicio anterior
 function beforQuestion(){
@@ -38,54 +53,29 @@ function beforQuestion(){
     }
 
 }
-//función para chequear las respuestas
-function checkAnswer(){
-    score.innerHTML = "0";
-    mistake.innerHTML = "0";
-    var answer =[1, 6, 11, 12, 18, 23, 24, 29, 34, 39];
-    for (var i = 0; i < boton.length; i++){
-        for(var j = 0; i < answer.length; j++){
-            if(boton[i] === boton[j]){
-                boton[i].addEventListener('click', correctAnswer)
-
-            }
-        }   
-    }
-        
-
+// para chequear las respuestas
+for(var j = 0; j < questions.length; j++){
+    boton[questions[j]].addEventListener('click', correctAnswer)
 
 }
-
+for(var i = 0; i < boton.length; i++){
+    if(i != 1 & i != 6 & i != 11 & i != 12 & i != 18 & i != 23& i != 24 & i != 29 & i !=34 & i !=39){
+        boton[i].addEventListener('click', incorrectAnswer)
+    }
+}
 function correctAnswer(){
-    var contar = 0;
-    if(contar < clase.length) {
-        correct++;
-        score.innerHTML = correct.toString();
-        contar++;
-        Swal.fire({
-            icon: 'success',
-            title: 'GOOD JOB'
-        })
-    }
-    if(contar === 9){
-        if (correct === 10){
-            Swal.fire({
-                icon: 'success',
-                title: 'EXELENT' + correct.toString() + '/10',
-                text: 'You are the best'
-            })
-        } else if(correct > 5){
-            Swal.fire({
-                icon: 'success',
-                title: 'WELL DONE' + correct.toString() + '/10',
-                text: 'Keep improving'
-            })
-        } else {
-            Swal.fire({
-                icon: 'error',
-                title: 'FAIL' + correct.toString() + '/10',
-                text: 'Never give up'
-            })
-        }
-    }
+    correct++;
+    score.innerHTML = correct.toString();
+    Swal.fire({
+        icon: 'success',
+        title: 'GOOD JOB'
+    })    
+}
+function incorrectAnswer(){
+    incorrect++;
+    mistake.innerHTML = incorrect.toString();
+    Swal.fire({
+        icon: 'error',
+        title: 'WRONG'
+    })
 }
