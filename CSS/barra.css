@@ -4,7 +4,7 @@ body {
 .barra {
     float: left;
     width: 200px;
-    height: 500px;
+    height: 615px;
     overflow-y: scroll;
     background-color: var(--bacgroundBar);
     position:static;

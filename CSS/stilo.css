@@ -44,6 +44,9 @@ header p {
 }
 .navegacion {
    height: 46px;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
 }
 .navegacion ul {
     list-style-type: none;
