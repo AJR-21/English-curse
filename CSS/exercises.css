@@ -100,3 +100,20 @@ h1 {
     color: var(--button);
     background-color: var(--fondo);
 }
+@media only screen and (max-width: 600px){
+    .contenedor{
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
+    .question {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .puntuacion {
+        margin: 20px 70px;
+        font-size: 14px;
+    }
+    .mover {
+        margin: 20px 90px;
+    }
+}

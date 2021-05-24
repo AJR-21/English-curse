@@ -78,7 +78,6 @@ header p {
 }
 @media only screen and (max-width: 600px) {
     .navegacion {
-        position: relative;
         width: 100%;
     }
 
