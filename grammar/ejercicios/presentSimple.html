@@ -6,8 +6,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='author' content='Alexander Jimenez'>
     <title>Present Simple Exercises</title>
+    <link rel="stylesheet" href="../../CSS/stilo.css">
+    <link rel="stylesheet" href="../../CSS/exercises.css">
 </head>
-<body>
-    
+<body onload="ocultarEjercicios()">
+    <h1>Present Simple</h1>
+    <div class="contenedor">
+
+        <div class="question">
+            <table>
+                <tr>
+                    <th><b>1.</b> Mayra _________ two languages.</th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="speak" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="speaks" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="speaking" class="answerPs"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="question">
+            <table>
+                <tr>
+                    <th><b>2.</b> In Peru the banks usually _________ at 9 o'clock.</th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="open" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="opens" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="opening" class="answerPs"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="question">
+            <table>
+                <tr>
+                    <th><b>3.</b> The bookstore _________ at 6 in the evening.</th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="close" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="closed" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="closes" class="answerPs"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="question">
+            <table>
+                <tr>
+                    <th><b>4.</b> Kevin is a teacher. He _________ English at the ICPNA.</th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="teaches" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="teach" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="teaching" class="answerPs"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="question">
+            <table>
+                <tr>
+                    <th><b>5.</b> Food is expensive. It _________ A lot of money.</th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="cost" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="costs" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="costing" class="answerPs"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="question">
+            <table>
+                <tr>
+                    <th><b>6.</b> Nike sneakers are expensive. they ________ 1000 dollars.</th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="cost" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="costs" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="costing" class="answerPs"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="question">
+            <table>
+                <tr>
+                    <th><b>7.</b> Alex is a researcher. He _________ at the university.</th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="working" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="work" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="works" class="answerPs"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="question">
+            <table>
+                <tr>
+                    <th><b>8.</b> We _________ a lot for the exam.</th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="study" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="studies" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="studys" class="answerPs"></td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="question">
+            <table>
+                <tr>
+                    <th><b>9.</b> He ___________ the piano and she ___________.</th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="play, sing" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="plays, sing" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="plays, sings" class="answerPs"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="question">
+            <table>
+                <tr>
+                    <th><b>10.</b> Maria ___________ her hair twice a week.</th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="wash" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="washes" class="answerPs"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="washs" class="answerPs"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <div class="puntuacion">
+        <label for="score">Score: </label>
+        <p id="score"></p>
+
+    </div>
+    <div class="puntuacion">
+        <label for="mistake">Mistakes: </label>
+        <p id="mistake"></p>
+    </div>
+
+    <button class="mover" onclick="beforQuestion()"><i class="fas fa-arrow-left"></i></button>
+    <button class="mover" onclick="nextQuestion()"><i class="fas fa-arrow-right"></i></button>
+
+    <script src="../../js/presentSimple.js"></script>
+    <script src="https://kit.fontawesome.com/a193a37628.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
+
 </body>
 </html>

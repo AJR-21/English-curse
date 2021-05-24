@@ -1,27 +1,27 @@
+
+var contador = 0;
 var correct = 0;
 var incorrect = 0;
-var contador = 0; 
-var clase = document.getElementsByClassName('question');
-var boton = document.getElementsByClassName('button');
-var score = document.getElementById('score');
-var mistake = document.getElementById('mistake');
-var questions = [1, 6, 11, 12, 18, 23, 24, 29, 34, 39];
-
-//función que oculta los ejercicios
+var question = document.getElementsByClassName('question')
+var answer = document.getElementsByClassName('answerPs')
+var score = document.getElementById('score')
+var mistake = document.getElementById('mistake')
+var list = [1, 3, 8, 9, 13, 15, 20, 21, 26, 28]
+//para ocultar los ejercicios
 function ocultarEjercicios(){
     
-    for(var i =  0; i < clase.length; i++){
+    for(var i =  0; i < question.length; i++){
         if( i > 0){
-            clase[i].style.display = "none";
+            question[i].style.display = "none";
         }
     }
 }
 //función que mueve al siguiente ejercicio
 function nextQuestion(){
-    if (contador < clase.length - 1){
-        clase[contador].style.display = 'none';
+    if (contador < question.length - 1){
+        question[contador].style.display = 'none';
         contador++;
-        clase[contador].style.display = 'block';
+        question[contador].style.display = 'block';
     } else if (contador === 9){
         if (correct === 10){
             Swal.fire({
@@ -47,20 +47,20 @@ function nextQuestion(){
 //función que hace retornar al ejercicio anterior
 function beforQuestion(){
     if (contador != 0){
-        clase[contador].style.display = 'none';
+        question[contador].style.display = 'none';
         contador--;
-        clase[contador].style.display = 'block';
+        question[contador].style.display = 'block';
     }
 
 }
-// para chequear las respuestas
-for(var j = 0; j < questions.length; j++){
-    boton[questions[j]].addEventListener('click', correctAnswer)
+//para chequear las respuestas
+for(var j = 0; j < list.length; j++){
+    answer[list[j]].addEventListener('click', correctAnswer)
 
 }
-for(var i = 0; i < boton.length; i++){
-    if(i != 1 & i != 6 & i != 11 & i != 12 & i != 18 & i != 23& i != 24 & i != 29 & i !=34 & i !=39){
-        boton[i].addEventListener('click', incorrectAnswer)
+for(var i = 0; i < answer.length; i++){
+    if(i != 1 & i != 3 & i != 8 & i != 9 & i != 13 & i != 15 & i != 20 & i != 21 & i !=26 & i !=28){
+        answer[i].addEventListener('click', incorrectAnswer)
     }
 }
 function correctAnswer(){
