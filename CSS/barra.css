@@ -43,11 +43,13 @@ body {
 
 @media only screen and (max-width: 600px) {
     .barra {
-        display: none;
+        float: none;
+        width: 100%;
+        margin-top: 48%;
+        overflow-y: none;
     }
     .hoja {
         width: 100% !important;
-        margin-top: 237px;
     }
     
 }

@@ -79,6 +79,7 @@ header p {
 @media only screen and (max-width: 600px) {
     .navegacion {
         width: 100%;
+        position: relative;
     }
 
     .navegacion li {
@@ -87,6 +88,9 @@ header p {
     .navegacion li a{
         text-align: center;
         width: 100%;
+    }
+    .cuerpo {
+        margin-top: 237px !important;
     }
     
 }

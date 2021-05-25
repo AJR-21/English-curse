@@ -32,17 +32,22 @@ img {
     box-shadow: -10px 10px 10px #364543;
     transition: transform 2s;
 }
-.margen1 {
-    margin-left: 25%;
-}
+
 img:hover {
     transform: rotateY(40deg);
 }
+@media only screen and (min-width: 600px){
+    .margen1 {
+        margin-left: 25%;
+    }
+}
 
-@media  only screen and(max-width: 600px) {
-  
-    .cuerpo {
-        width: 100%;
+@media  only screen and (max-width: 600px) {
+    .cuerpo img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 25% !important;
+        margin-right: auto !important;
     }
     
    
