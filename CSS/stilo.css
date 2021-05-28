@@ -89,12 +89,13 @@ header p {
         text-align: center;
         width: 100%;
     }
-    .cuerpo {
+    .cuerpo, .container2 {
         margin-top: 237px !important;
     }
     
 }
 footer {
+    margin-top: 50px;
     clear: both;
     background-color: var(--footer);
     padding: 30px;

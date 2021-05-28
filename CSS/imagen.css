@@ -7,6 +7,7 @@ body {
    background-image: radial-gradient(var(--color1), var(--color2)); 
 }
 .cuerpo {
+    width: 100%;
     display: inline-block;
     margin-top: 0;
     padding: 0;   
@@ -23,11 +24,26 @@ body {
     color:  white;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    justify-content: center;
+}
+/*diseño del grid en la página del grammar*/
+.container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 80px;
+    justify-content: center;
+
+}
+.img2 {
+    margin-top: 80px;
+}
 img {
     width: 250px;
-    height: 250px;
-    margin: 100px; 
-    margin-top: 60px;
+    height: 250px; 
     border-radius: 20px;
     box-shadow: -10px 10px 10px #364543;
     transition: transform 2s;
@@ -36,18 +52,14 @@ img {
 img:hover {
     transform: rotateY(40deg);
 }
-@media only screen and (min-width: 600px){
-    .margen1 {
-        margin-left: 25%;
-    }
-}
 
 @media  only screen and (max-width: 600px) {
-    .cuerpo img {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 25% !important;
-        margin-right: auto !important;
+    .container, .container2 {
+        grid-template-columns: auto;
+        grid-row-gap: 20px;
+    }
+    .img2 {
+        margin-top: 0;
     }
     
    
